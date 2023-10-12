@@ -1,0 +1,23 @@
+.about {
+  background: #434343;
+  padding: 80px 48px;
+  display: grid;
+  grid-template-columns: auto 530px;
+  align-items: end;
+}
+
+.about-note {
+  color: var(--White, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.about-note h1 {
+  font-size: 48px;
+}
+
+.about-note p {
+  font-size: 24px;
+}

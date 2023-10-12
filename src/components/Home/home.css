@@ -1,0 +1,83 @@
+.home {
+  display: grid;
+  grid-template-columns: 530px auto;
+  padding: 80px 48px;
+  justify-content: space-between;
+  align-items: start;
+  color: #434343;
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.home-left h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.home-left p {
+  font-size: 24px;
+}
+
+.home-right {
+  display: flex;
+  gap: 16px;
+}
+
+.home-left__button-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.home-left__button-flex button {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  color: var(--White, #FFF);
+
+  border-radius: 8px;
+  background: #434343;
+  border: 2px solid #434343;
+}
+
+.home-left__button-flex button:last-child {
+  background: none;
+  color: #434343;
+}
+
+@media screen and (max-width: 810px) {
+  .home {
+    /* !! Remember to make research about aligning this vertically with grid */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 608px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  .home-left h1 {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .home-left p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .home-left__button-flex {
+    margin: 0 auto;
+  }
+}
